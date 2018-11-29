@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var request = new XMLHttpRequest();
+            request.open('GET', 'http://127.0.0.1:8088/', true);
+            request.onload = function (evt) {
+                if (evt.target.status >= 200 && evt.target.status < 400) {
+                    console.log('success!');
+                }
+            }
+            request.send();
+        </script>
+    </head>
+    <body></body>
+</html>
